@@ -6,7 +6,7 @@ import React from "react";
 const images = [
     { id: 1, src: "/kn4.jpg", alt: "Memory 1" },
     { id: 2, src: "/kn2.jpg", alt: "Memory 2" },
-    { id: 3, src: "/kn3.jpg", alt: "Memory 3" },
+    { id: 3, src: "/kn7.jpg", alt: "Memory 3" },
     { id: 4, src: "/kn1.jpg", alt: "Memory 4" },
     { id: 5, src: "/kn5.jpg", alt: "Memory 5" },
     { id: 6, src: "/kn6.jpg", alt: "Memory 6" },

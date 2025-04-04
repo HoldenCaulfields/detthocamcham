@@ -6,8 +6,10 @@ import Image from "next/image";
 const products = [
     { id: 1, name: "Khanh", description: "Quá trình làm đầy khó khăn", img: '/khanh.jpg' },
     { id: 2, name: "Khăn", description: "Khăn gió", img: '/khan.jpg' },
-    { id: 3, name: "Ao", description: "Áo dệt thủ công", img: '/ao.jpg' },
-    
+    { id: 3, name: "Khăn", description: "khăn truyền thống", img: '/khan2.jpg' },
+    { id: 4, name: "Khăn", description: "khăn ấm", img: '/khan3.jpg' },
+    { id: 5, name: "Khăn", description: "khăn tay", img: '/khan4.jpg' },
+    { id: 6, name: "Ao", description: "Áo dệt thủ công", img: '/ao.jpg' },
 ];
 
 const Products = () => {
