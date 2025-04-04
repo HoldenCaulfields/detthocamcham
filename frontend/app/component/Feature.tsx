@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import Introduction from "./Introduction";
 
 const images = [
     "/det1.jpg",
@@ -51,13 +52,7 @@ const Home = () => {
 
             {/* Only Render Small Image on Desktop (md and larger) */}
             {!isMobile && (
-                <Image
-                    src='/logo.png'
-                    alt="Dệt thổ cẩm Chăm"
-                    width={463} // Adjust as needed
-                    height={617} // Adjust as needed
-                    className="w-24 sm:w-32 rounded-lg shadow-lg md:w-1/3 md:relative md:block fixed bottom-4 left-4 md:bottom-auto md:left-auto"
-                />
+                <Introduction />
             )}
         </div>
     );

@@ -9,8 +9,8 @@ const Contact = () => {
             
             {/* Contact Info */}
             <div className="mb-6">
-                <p className="text-lg"><strong>SĐT:</strong> 0364494839</p>
-                <p className="text-lg"><strong>Email:</strong> thucmath2000@gmail.com</p>
+                <p className="text-lg">SĐT: 0364494839</p>
+                <p className="text-lg">Email: thucmath2000@gmail.com</p>
             </div>
 
             {/* Google Maps Embed */}
