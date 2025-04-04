@@ -18,7 +18,7 @@ const Introduction = () => {
                 w-[90%] sm:w-4/5 md:w-1/2 max-w-3xl mx-auto fixed bottom-6 left-1/2 -translate-x-1/2 
                 md:static md:translate-x-0 rounded-3xl shadow-xl
                 bg-gradient-to-br from-stone-100 via-amber-50 to-stone-200
-                backdrop-blur-sm border border-stone-300 p-8
+                border border-stone-300 p-8
             `}
         >
             <div className="text-center text-3xl md:text-4xl font-extrabold text-amber-900 mb-4 tracking-tight">

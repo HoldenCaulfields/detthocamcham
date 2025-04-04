@@ -11,16 +11,16 @@ const IconButton: React.FC = () => {
     };
 
     return (
-        <div className="fixed bottom-6 left-6 z-50">
+        <div className="fixed bottom-10 left-4 z-50">
             <button
                 onClick={handleClick}
-                className="flex items-center space-x-3 px-6 py-3 rounded-full bg-gradient-to-r from-[#f8cdda] to-[#f5f7fa] 
-                text-gray-800 shadow-lg backdrop-blur-md border border-white/30
-                hover:shadow-xl hover:scale-110 hover:from-[#ff9a9e] hover:to-[#fad0c4] 
-                transition-all duration-300 transform active:scale-95"
+                className="flex items-center  px-6 py-3 rounded-full bg-gradient-to-r from-[#f8cdda] to-[#f5f7fa] 
+                text-gray-800 shadow-2xl backdrop-blur-md border border-white/40
+                hover:shadow-2xl hover:scale-110 hover:from-[#ff9a9e] hover:to-[#fad0c4] 
+                transition-transform duration-300 ease-out transform active:scale-95"
             >
                 <span className="text-2xl animate-pulse">🎮</span>
-                <span className="text-lg font-semibold">Trò chơi</span>
+                <span className="hidden md:block text-lg font-semibold">Trò chơi</span>
             </button>
         </div>
     );
