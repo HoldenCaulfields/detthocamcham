@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Language from "./Language";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -44,6 +45,8 @@ const Navbar = () => {
                             <span>☰</span>
                         )}
                     </button>
+
+                    {/* <Language onLanguageChange={(language) => console.log(language)} /> */}
 
                     {/* Navigation Links */}
                     <div className={`md:flex md:items-center md:w-auto w-full transition-all duration-300 ease-in-out ${isOpen ? "block" : "hidden"}`}>

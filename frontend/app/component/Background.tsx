@@ -69,7 +69,7 @@ const Background = () => {
             container.appendChild(div);
         };
 
-        let animationInterval = setInterval(animate, 500); // Reduced interval to slow down the rate of new lines
+        let animationInterval = setInterval(animate, 100); // Reduced interval to slow down the rate of new lines
 
         return () => {
             clearInterval(animationInterval);
@@ -88,6 +88,7 @@ const Background = () => {
                 overflow: 'hidden',
                 pointerEvents: 'none',
                 zIndex: -1, // Ensure it's behind other content
+                opacity: 0.1,
             }}
             className='bg-gradient-to-r from-red-50 to-gray-100'
         />
