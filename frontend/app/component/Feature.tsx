@@ -5,11 +5,13 @@ import Image from "next/image";
 import Introduction from "./Introduction";
 
 const images = [
+    "/mynghiep.jpg",
     "/det1.jpg",
     "/det2.jpg",
     "/det3.jpg",
     "/det4.jpg",
     "/det.jpg",
+    "/detcham.jpg",
 ];
 
 const Home = () => {

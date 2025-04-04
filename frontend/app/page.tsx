@@ -1,5 +1,6 @@
 
 import Background from "./component/Background";
+import Blogs from "./component/Blogs";
 import Contact from "./component/Contact";
 import Feature from "./component/Feature";
 import IconButton from "./component/GameIcon";
@@ -13,6 +14,7 @@ export default function Home() {
       <Background />
       <Feature />
       <Products />
+      <Blogs />
       <Memories />
       <Contact />
       <SendLove />

@@ -69,6 +69,12 @@ const Navbar = () => {
                                     <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-500 transition-all duration-300 hover:w-full"></span>
                                 </Link>
                             </li>
+                            <li>
+                                <Link href="https://inrasara.com/" className="relative block px-3 py-2 text-gray-700 hover:text-blue-700 transition-all duration-300" target="_blank" rel="noopener noreferrer">
+                                    Nghiên Cứu Chăm
+                                    <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-500 transition-all duration-300 hover:w-full"></span>
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                 </div>
