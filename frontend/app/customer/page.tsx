@@ -66,7 +66,7 @@ const CustomerPage: React.FC = () => {
                   className="text-indigo-500 hover:text-indigo-700 focus:outline-none text-sm"
                   onClick={() => toggleExpand(post._id)}
                 >
-                  Xem thêm
+                  
                 </button>
               )}
               {expandedPostId === post._id && (
@@ -74,7 +74,7 @@ const CustomerPage: React.FC = () => {
                   className="text-indigo-500 hover:text-indigo-700 focus:outline-none text-sm"
                   onClick={() => toggleExpand(post._id)}
                 >
-                  Thu gọn
+                  
                 </button>
               )}
             </div>
