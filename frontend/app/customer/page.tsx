@@ -47,7 +47,7 @@ const CustomerPage: React.FC = () => {
             <h2 className="text-xl font-bold text-indigo-600 mb-2">
               {post.username}
             </h2>
-            <p className="text-gray-700 italic mb-4">“{post.text}”</p>
+            <p className="text-gray-700 italic mb-4 break-words">“{post.text}”</p>
 
             {post.mediaUrl && post.mediaUrl.match(/\.(mp4|webm|ogg)$/i) ? (
               <video
