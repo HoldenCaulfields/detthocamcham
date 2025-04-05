@@ -13,6 +13,7 @@ interface Post {
 
 const CustomerPage: React.FC = () => {
   const [posts, setPosts] = useState<Post[]>([]);
+  const [expandedPostId, setExpandedPostId] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -32,6 +33,10 @@ const CustomerPage: React.FC = () => {
     fetchPosts();
   }, []);
 
+  const toggleExpand = (postId: string) => {
+    setExpandedPostId(expandedPostId === postId ? null : postId);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-rose-100 to-indigo-100 py-10 px-4 md:px-16">
       <h1 className="text-2xl md:text-5xl font-extrabold text-center text-gray-800 mb-10">
@@ -47,7 +52,32 @@ const CustomerPage: React.FC = () => {
             <h2 className="text-xl font-bold text-indigo-600 mb-2">
               {post.username}
             </h2>
-            <p className="text-gray-700 italic mb-4 break-words">“{post.text}”</p>
+            <div className="mb-4">
+              <p
+                className={`text-gray-700 italic break-words ${
+                  expandedPostId === post._id ? "" : "line-clamp-4 cursor-pointer"
+                }`}
+                onClick={() => toggleExpand(post._id)}
+              >
+                “{post.text}”
+              </p>
+              {expandedPostId !== post._id && post.text.split(" ").length > 50 && (
+                <button
+                  className="text-indigo-500 hover:text-indigo-700 focus:outline-none text-sm"
+                  onClick={() => toggleExpand(post._id)}
+                >
+                  Xem thêm
+                </button>
+              )}
+              {expandedPostId === post._id && (
+                <button
+                  className="text-indigo-500 hover:text-indigo-700 focus:outline-none text-sm"
+                  onClick={() => toggleExpand(post._id)}
+                >
+                  Thu gọn
+                </button>
+              )}
+            </div>
 
             {post.mediaUrl && post.mediaUrl.match(/\.(mp4|webm|ogg)$/i) ? (
               <video
