@@ -44,7 +44,7 @@ const Blogs = () => {
 
     return (
         <div className="w-full mx-auto px-4 py-8">
-            <h1 className="text-xl font-bold mb-4 text-center">Blogs về Dệt Thổ Cẩm Chăm</h1>
+            <h1 className="text-xl font-bold mb-4 text-center">Bài viết về Dệt Thổ Cẩm Chăm</h1>
             <div className="flex flex-nowrap overflow-x-auto gap-4">
                 {blogs.map((blog, index) => (
                     <a key={index} href={blog.link} target='_blank' className="bg-gray-100 rounded-lg shadow-md overflow-hidden w-64 shrink-0">

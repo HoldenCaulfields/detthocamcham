@@ -39,7 +39,7 @@ const ExperiencePage = () => {
       });
 
       if (response.status === 200) {
-        alert("✨ Cảm ơn bạn đã chia sẻ kỉ niệm!");
+        alert("✨ Cảm ơn bạn đã chia sẻ kỷ niệm!");
         router.push("/customer");
       }
     } catch (error) {
@@ -96,7 +96,7 @@ const ExperiencePage = () => {
             <textarea
               value={text}
               onChange={(e) => setText(e.target.value)}
-              placeholder="Chia sẻ cảm xúc, một câu chuyện, hoặc kỉ niệm đẹp..."
+              placeholder="Chia sẻ cảm xúc, một câu chuyện, hoặc kỷ niệm đẹp..."
               className="w-full px-4 py-3 h-32 resize-none rounded-xl bg-white/30 placeholder-white border border-white/30 text-white focus:outline-none focus:ring-2 focus:ring-indigo-400 transition"
             />
           </div>
@@ -106,7 +106,7 @@ const ExperiencePage = () => {
               onClick={handleSubmit}
               className="bg-gradient-to-r from-green-400 to-blue-500 text-white px-8 py-3 rounded-full text-lg font-bold shadow-lg hover:scale-105 transition"
             >
-              🚀 Gửi Kỉ Niệm
+              🚀 Gửi Kỷ Niệm
             </button>
           </div>
         </div>
