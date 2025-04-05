@@ -56,7 +56,7 @@ const ExperiencePage = () => {
 
       <div className="relative z-10 w-full max-w-2xl p-8 rounded-3xl bg-white/10 shadow-2xl border border-white/20 backdrop-blur-xl">
         <h1 className="text-4xl font-extrabold text-center mb-10 text-white drop-shadow-xl">
-          🌠 Gửi Kỉ Niệm Của Bạn Tới Làng Nghề Mỹ Nghiệp
+          🌠 Gửi Kỷ Niệm Của Bạn Tới Làng Nghề Mỹ Nghiệp
         </h1>
 
         <div className="space-y-6">
