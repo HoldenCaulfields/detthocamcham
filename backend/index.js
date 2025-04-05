@@ -1,3 +1,4 @@
+require('dotenv').config(); // Add dotenv for environment variables
 const express = require('express');
 const mongoose = require('mongoose');
 const multer = require('multer');
@@ -6,11 +7,19 @@ const { CloudinaryStorage } = require('multer-storage-cloudinary');
 const cors = require('cors');
 
 const app = express();
-app.use(cors());
+
+// CORS settings
+const allowedOrigins = process.env.ALLOWED_ORIGINS.split(',');
+app.use(cors({
+    origin: allowedOrigins,
+}));
 app.use(express.json());
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://nguyenthianh1232345:7eWC9POYJW3nd70F@cluster0.tsxs9.mongodb.net/detthocam');
+mongoose.connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+});
 
 const experienceSchema = new mongoose.Schema(
     {
@@ -25,9 +34,9 @@ const Experience = mongoose.model('Experience', experienceSchema);
 
 // Cloudinary configuration
 cloudinary.config({
-    cloud_name: 'dgmvr9lnh',
-    api_key: '255263791117579',
-    api_secret: 'A-D6LcxqmWaMZkN_jbZr06Bpg0E',
+    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+    api_key: process.env.CLOUDINARY_API_KEY,
+    api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
 const storage = new CloudinaryStorage({
@@ -67,6 +76,7 @@ app.get('/upload', async (req, res) => {
 });
 
 // Start server
-app.listen(5000, () => {
-    console.log('Server is running on http://localhost:5000');
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
 });

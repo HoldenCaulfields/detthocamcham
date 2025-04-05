@@ -1,4 +1,3 @@
-
 import Background from "./component/Background";
 import Blogs from "./component/Blogs";
 import Contact from "./component/Contact";
@@ -9,6 +8,9 @@ import Memories from "./component/Memories";
 import Products from "./component/Products";
 import SendLove from "./component/Sendlove";
 import UserUpload from "./component/Userupload";
+
+const API_BASE_URL = "https://your-backend-domain.com"; // Replace with your backend's deployed URL
+// Use this base URL for all API calls in the frontend
 
 export default function Home() {
   return (
