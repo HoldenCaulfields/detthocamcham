@@ -21,7 +21,7 @@ const CustomerPage: React.FC = () => {
           data: Post[];
         }
 
-        const response: ApiResponse = await axios.get("http://localhost:5000/upload");
+        const response: ApiResponse = await axios.get("https://detthocamcham.onrender.com/upload");
         const sortedPosts: Post[] = response.data.sort((a: Post, b: Post) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
         setPosts(sortedPosts);
       } catch (error) {

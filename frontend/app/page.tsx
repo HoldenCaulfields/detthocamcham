@@ -9,7 +9,7 @@ import Products from "./component/Products";
 import SendLove from "./component/Sendlove";
 import UserUpload from "./component/Userupload";
 
-const API_BASE_URL = "https://your-backend-domain.com"; // Replace with your backend's deployed URL
+const API_BASE_URL = "https://detthocamcham.onrender.com"; // Backend's deployed URL
 // Use this base URL for all API calls in the frontend
 
 export default function Home() {

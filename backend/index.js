@@ -9,17 +9,14 @@ const cors = require('cors');
 const app = express();
 
 // CORS settings
-const allowedOrigins = process.env.ALLOWED_ORIGINS.split(',');
+const allowedOrigins = ['https://detthocamcham.vercel.app', 'https://detthocamcham.onrender.com'];
 app.use(cors({
     origin: allowedOrigins,
 }));
 app.use(express.json());
 
 // MongoDB connection
-mongoose.connect(process.env.MONGODB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-});
+mongoose.connect(process.env.MONGODB_URI);
 
 const experienceSchema = new mongoose.Schema(
     {
