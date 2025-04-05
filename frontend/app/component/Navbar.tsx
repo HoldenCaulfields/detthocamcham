@@ -50,7 +50,7 @@ const Navbar = () => {
 
                     {/* Navigation Links */}
                     <div className={`md:flex md:items-center md:w-auto w-full transition-all duration-300 ease-in-out ${isOpen ? "block" : "hidden"}`}>
-                        <ul className="flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0">
+                        <ul className="flex flex-col md:flex-row md:space-x-4 mt-4 md:mt-0" onClick={() => setIsOpen(!isOpen)}>
                             <li>
                                 <Link href="/" className="relative block px-3 py-2 text-gray-700 hover:text-blue-700 transition-all duration-300">
                                     Trang chủ
@@ -58,20 +58,32 @@ const Navbar = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#about" className="relative block px-3 py-2 text-gray-700 hover:text-blue-700 transition-all duration-300">
-                                    Giới thiệu
+                                <Link href="/blogs" className="relative block px-3 py-2 text-gray-700 hover:text-blue-700 transition-all duration-300">
+                                    Bài Viết
                                     <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-500 transition-all duration-300 hover:w-full"></span>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#projects" className="relative block px-3 py-2 text-gray-700 hover:text-blue-700 transition-all duration-300">
+                                <Link href="/products" className="relative block px-3 py-2 text-gray-700 hover:text-blue-700 transition-all duration-300">
                                     Sản phẩm
+                                    <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-500 transition-all duration-300 hover:w-full"></span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/customer" className="relative block px-3 py-2 text-gray-700 hover:text-blue-700 transition-all duration-300">
+                                    Khách Thăm
                                     <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-500 transition-all duration-300 hover:w-full"></span>
                                 </Link>
                             </li>
                             <li>
                                 <Link href="https://inrasara.com/" className="relative block px-3 py-2 text-gray-700 hover:text-blue-700 transition-all duration-300" target="_blank" rel="noopener noreferrer">
                                     Nghiên Cứu Chăm
+                                    <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-500 transition-all duration-300 hover:w-full"></span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/experience" className="relative block px-3 py-2 text-gray-700 hover:text-blue-700 transition-all duration-300" target="_blank" rel="noopener noreferrer">
+                                    Gửi Hình
                                     <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-500 transition-all duration-300 hover:w-full"></span>
                                 </Link>
                             </li>

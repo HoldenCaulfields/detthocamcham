@@ -8,6 +8,7 @@ import IconButton from "./component/GameIcon";
 import Memories from "./component/Memories";
 import Products from "./component/Products";
 import SendLove from "./component/Sendlove";
+import UserUpload from "./component/Userupload";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Products />
       <Blogs />
       <Memories />
+      <UserUpload />
       <Contact />
       <SendLove />
       <IconButton />

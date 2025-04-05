@@ -43,7 +43,7 @@ const Blogs = () => {
     ];
 
     return (
-        <div className="container mx-auto ml-4 py-8">
+        <div className="w-full mx-auto px-4 py-8">
             <h1 className="text-xl font-bold mb-4 text-center">Blogs về Dệt Thổ Cẩm Chăm</h1>
             <div className="flex flex-nowrap overflow-x-auto gap-4">
                 {blogs.map((blog, index) => (
