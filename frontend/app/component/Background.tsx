@@ -15,8 +15,8 @@ interface Thread {
 const Background = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const threadsRef = useRef<Thread[]>([]);
-  const animationIdRef = useRef<number>();
-  const timeRef = useRef(0);
+  const animationIdRef = useRef<number>(0);
+  const timeRef = useRef<number>(0);
 
   // Màu sắc truyền thống Chăm + ánh kim
   const chamColors = [
